@@ -18,13 +18,13 @@ function App() {
     // <div className="container-fluid">
     //   <h1 className="text-center">Hello</h1>
     // </div>
-    <>
+    <div className='maain'>
       <Routes>
         <Route path="/" element={<ProtectedRoutes><HomePage /></ProtectedRoutes>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

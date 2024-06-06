@@ -18,7 +18,7 @@ const Header = () => {
         navigate("/login")
     }
     return (
-        <>
+        <div className='heeder'>
 
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <img class="header-logo" src={process.env.PUBLIC_URL + '/' + 'logo.png'}  />
-                    <Link to="/" className="navbar-brand">Expense Tracker</Link>
+                    <Link to="/" className="navbar-brand">TrackMon</Link>
                     <ul className="navbar-nav ms-auto mt-3">
                         <li className="nav-item active item1">
                             {" "}<p to="/user" className="nav-link">Welcome, {loginUser && loginUser.name}</p>{" "}
@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
             </nav>
 
-        </>
+        </div>
     );
 };
 

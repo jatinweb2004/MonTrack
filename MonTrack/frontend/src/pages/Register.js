@@ -35,23 +35,25 @@ const Register = () => {
             <div className='register-loading'>
                 {laoding && <Spinner />}
             </div>
-            <div className='register-page'>
-                <Form layout='vertical' onFinish={submitHandler}>
-                    <h1>Registration Form</h1>
-                    <Form.Item label="Name" name="name">
-                        <Input />
-                    </Form.Item>
-                    <Form.Item label="Email" name="email">
-                        <Input type="email" />
-                    </Form.Item>
-                    <Form.Item label="Password" name="password">
-                        <Input type="password" />
-                    </Form.Item>
-                    <div className='d-flex justify-content-between'>
-                        <Link to="/login">Already Registered?<br></br> Click Here To Login!</Link>
-                        <button className='btn btn-primary'>Register</button>
-                    </div>
-                </Form>
+            <div className='Main-regi'>
+                <div className='register-page'>
+                    <Form layout='vertical' onFinish={submitHandler}>
+                        <h1>Registration Form</h1>
+                        <Form.Item label="Name" name="name">
+                            <Input />
+                        </Form.Item>
+                        <Form.Item label="Email" name="email">
+                            <Input type="email" />
+                        </Form.Item>
+                        <Form.Item label="Password" name="password">
+                            <Input type="password" />
+                        </Form.Item>
+                        <div className='d-flex justify-content-between'>
+                            <Link to="/login">Already Registered?<br></br> Click Here To Login!</Link>
+                            <button className='btn btn-primary'>Register</button>
+                        </div>
+                    </Form>
+                </div>
             </div>
         </div>
     )

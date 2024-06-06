@@ -3,6 +3,7 @@ import { Form, Input, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
+import Header from '../components/layout/Header';
 
 
 const Login = () => {
@@ -32,6 +33,7 @@ const Login = () => {
 
     return (
         <>
+            {/* <Header/> */}
             <div className='login-loading'>
                 {loading && <Spinner />}
             </div>
