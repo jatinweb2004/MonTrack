@@ -19,6 +19,9 @@ Features:
 Tech Stack Used:
 
 --Frontend: React
+
 --Backend: Node.js, Express.js
+
 --Database: MongoDB
+
 --Authentication: JWT tokens, bcrypt.js
