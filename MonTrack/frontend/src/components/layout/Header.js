@@ -26,7 +26,7 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <img class="header-logo" src={process.env.PUBLIC_URL + '/' + 'logo.png'}  />
-                    <Link to="/" className="navbar-brand">TrackMon</Link>
+                    <Link to="/" className="navbar-brand">MonTrack</Link>
                     <ul className="navbar-nav ms-auto mt-3">
                         <li className="nav-item active item1">
                             {" "}<p to="/user" className="nav-link">Welcome, {loginUser && loginUser.name}</p>{" "}
